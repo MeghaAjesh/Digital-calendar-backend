@@ -33,8 +33,8 @@ public class EventController {
 
  @PostMapping
 public Object addEvent(@RequestBody Event event, @RequestParam String role){
-
-    if(!role.equals("ADMIN")){
+    
+if(!"ADMIN".equals(role)){
         return "Only admin can add events";
     }
 
