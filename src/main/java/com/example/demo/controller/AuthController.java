@@ -35,7 +35,7 @@ public class AuthController {
         if(user.isPresent() &&
            user.get().getPassword().equals(loginUser.getPassword())){
 
-            return user.get();   // ✅ now valid
+            return user.get();  
         }
 
         return null;
